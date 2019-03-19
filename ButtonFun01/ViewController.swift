@@ -21,9 +21,18 @@ class ViewController: UIViewController {
         print(myLabel.text!)
         myLabel.text = "Hello iPhone!!!"
         
+        // 실행할때 서브 뷰의 색깔을 red로 변경
         mySubView.backgroundColor = UIColor.red
     }
 
-
+    // 버튼을 누르면 메인 뷰의 색깔을 cyan으로 변경
+    @IBAction func buttonApressed(_ sender: Any) {
+        self.view.backgroundColor = UIColor.orange
+    }
+    
+    @IBAction func buttonBpressed(_ sender: Any) {
+        mySubView.backgroundColor = UIColor.cyan
+    }
+    
 }
 
